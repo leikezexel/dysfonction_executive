@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,700|Quattrocento:700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,700|Quattrocento:700');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Solitreo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Special+Elite&display=swap');
+
+body {
+    font-family: 'Crimson Text';
+    font-weight: lighter;
+    overflow: hidden;
+    color: #5d0675;
+    background: rgb(248, 236, 224);
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+    body.switched {
+        transition: color 0.6s, background-color 0.6s;
+    }
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Special Elite', cursive;
+    color: rgba(147, 147, 255, 0.97);
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Special Elite', cursive;
+    color: #75ad06;
+    font-weight: 500;
+    font-size: 30pt;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 14pt;
+    font-style: italic;
+    font-family: sans-serif;
+    font-weight: lighter;
+    color: rgba(171, 147, 223, 0.97);
+}
+
+.header {
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+/*
+  Built-in class:
+    # author: Name
+*/
+.byline {
+    font-style: italic;
+}
+
+.written-in-ink {
+    z-index: 3;
+    font-size: 9pt;
+    font-family: sans-serif;
+    text-align: center;
+    font-weight: 700;
+    position: fixed;
+    display: block;
+    width: 100%;
+    background: #D1C6BB;
+    margin: 0;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    height: 14px;
+    top: 0;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+    .written-in-ink {
+        transition: color 0.6s, background 0.6s;
+    }
+}
+
+/* 
+  Enables <iframe> support work on itch.io when using mobile iOS
+*/
+.outerContainer {
+    position: absolute;
+    display: block;
+    margin: 0;
+    padding: 0;
+    -webkit-overflow-scrolling: touch;
+    overflow: scroll;
+    overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin-top: 24px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 980px) {
+    .outerContainer {
+        margin-top: 44px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+.container {
+    display: block;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    padding-top: 4em;
+    background: rgb(248, 236, 224);
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+    .switched .container {
+        transition: background-color 0.6s;
+    }
+}
+
+p {
+    font-size: 13pt;
+    color: rgba(87, 32, 133, 0.97);
+    line-height: 1.7em;
+    font-weight: lighter;
+}
+
+a {
+    font-weight: 500;
+    color: rgba(176, 155, 96, 0.97);
+    font-family: sans-serif;
+    transition: color 0.6s;
+    text-decoration: none;
+}
+
+.unclickable {
+    font-weight: 700;
+    color: #30135f;
+    font-family: sans-serif;
+    text-decoration: none;
+    cursor: not-allowed;
+}
+
+a:hover {
+    color: #7c16ba;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+    a {
+        transition: color 0.6s;
+    }
+
+    a:hover {
+        transition: color 0.1s;
+    }
+}
+
+strong {
+    color: #232223;
+    font-weight: bold;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.container .hide {
+    opacity: 0.0;
+}
+
+.container .invisible {
+    display: none;
+}
+
+.container>* {
+    opacity: 1.0;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+    .container>* {
+        transition: opacity 1.0s;
+    }
+}
+
+/*
+  Class applied to all choices
+  (Will always appear inside <p> element by default.)
+*/
+.choice {
+    text-align: center;
+    line-height: 1.7em;
+}
+
+/* 
+  Class applied to first choice
+*/
+:not(.choice)+.choice {
+    padding-top: 1em;
+}
+
+/*
+  Class applied to choice links
+*/
+.choice a, .choice span {
+    font-family: 'Crimson Text', serif;
+    font-size: 15pt;
+}
+
+/* 
+  Built-in class:
+    The End # CLASS: end
+*/
+.end {
+    text-align: center;
+    font-weight: bold;
+    color: #232223;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#controls {
+    z-index: 4;
+    font-size: 9pt;
+    text-align: center;
+    padding-bottom: 6px;
+    position: fixed;
+    right: 14px;
+    top: 4px;
+    user-select: none;
+    background: #D1C6BB;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+    #controls {
+        transition: color 0.6s, background 0.6s;
+    }
+}
+
+#controls [disabled] {
+    color: #ae6ad3;
+}
+
+#controls>*:not(:last-child):after {
+    content: " | ";
+}
+
+@media screen and (max-width: 980px) {
+    #controls {
+        z-index: 2;
+        padding-top: 24px;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+}
+
+/* 
+  Dark Theme (Added in Inky 0.10.0)
+    # theme: dark
+*/
+
+body.dark {
+    background: #232223;
+    color: rgba(177, 149, 255);
+}
+
+.dark h1 {
+    text-align: center;
+    font-family: 'Special Elite', cursive;
+    color: #8ACE00;
+    font-weight: 200;
+    font-size: 30pt;
+    margin-bottom: 10px;
+}
+
+.dark h2 {
+    color: rgba(147, 147, 255, 0.97);
+}
+
+.dark .container {
+    background: #232223;
+}
+
+.dark .written-in-ink {
+    background: #1d1c1d;
+}
+
+.dark p {
+    font-size: 13pt;
+    color: rgb(189, 146, 237);
+    line-height: 1.7em;
+    font-weight: lighter;
+}
+
+.dark a {
+    color: rgba(255, 229, 123, 0.97);
+}
+.dark .unclickable{
+    color: #861bdea9;
+    cursor:not-allowed;
+}
+
+.dark a:hover {
+    color: rgba(177, 149, 255);
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+    .dark a {
+        transition: color 0.6s;
+    }
+}
+
+.dark strong {
+    color: #f0eaff;
+}
+
+.dark #controls [disabled] {
+    color: #ffe95c6e;
+}
+
+
+.dark .end {
+    color: #f0eaff;
+}
+
+.dark #controls {
+    background: #1d1c1d;
+}
+
+.legende {
+    font-style: italic;
+    font-weight: 200;
+    color: #985ec766;
+}
+
+p.legende {
+    font-style: italic;
+    font-weight: 200;
+    color: #642e9066;
+}
+
+.dark p.legende {
+    font-style: italic;
+    font-weight: 200;
+    color: #985ec766;
+}
+
+.player {
+    font-style: italic;
+    text-align: center;
+}
+
+p.player {
+    color: #75ad06;
+}
+
+.dark .player {
+    color: #89ce00;
+}
