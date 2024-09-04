@@ -3,11 +3,9 @@
 
 Pour jouer, vous pouvez simplement vous rendre sur https://lexezekiel.itch.io/dysfonction-executive, puis cliquer sur "Run interactive fiction".
 
-Après l'écran d'accueil, en cliquant "voir l'introduction", le·a joueur·euse accédera d'abord à une sorte d'auto-évaluation, comprennent plusieurs questions qui décrivent certains symptômes du TDAH. (voir ci-dessous)
+Après l'écran d'accueil, en cliquant "voir l'introduction", le·a joueur·euse accédera d'abord à une sorte d'auto-évaluation, comprennent plusieurs questions qui décrivent certains symptômes du TDAH. (voir ci-dessous) Passer l'introduction mène directement au début du jeu, c'est-à-dire au matin, quand le·a joueur·euse se "réveille".
 
 ![image](https://github.com/user-attachments/assets/b25be01e-e76b-4484-8770-0b6598ac8a9b)
-
-
 
 Ce projet a été développé dans le cadre du cours "Fiction interactive" dispensé par Isaac Pante (SLI, Lettres, UNIL).
 
